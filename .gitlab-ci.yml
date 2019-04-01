@@ -1,0 +1,13 @@
+image: docker.matters.tech/docker/base-images/ci/node10:latest
+
+stages:
+  - unit
+
+test.unit:
+  stage: unit
+  before_script:
+    - yarn
+  script:
+    - yarn test
+  tags:
+    - k8s
