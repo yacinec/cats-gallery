@@ -1,32 +1,32 @@
-# Cats adoption project (Frontend technical exercise)
+# Projet d'adoption de chats (Exercice technique front) <a href="./README.en.md">English version</a>
 
-## Project setup
+## Procédure d'installation
 
-### Requirements
+### Prérequis
 
-To run the app you must have `nodejs` (https://nodejs.org/en/download/) installed on your computer. `npm` or `yarn` is also mandatory.
+Vous devez avoir `nodejs` (https://nodejs.org/fr/download/) installé sur votre machine. Il vous faudra également l'un des deux package manager suivant : `yarn` ou `npm`.
 
-### Install
+### Installation
 
-- Clone the project : `git clone https://gitlab.matters.tech/robin.brissaud/cats-adoption.git`
-- Install dependencies : `cd cats-adoption` and `yarn install` (or `npm install`)
+- Cloner le projet: `git clone https://gitlab.matters.tech/entretiens/cats-adoption.git`
+- Installer les dépendences : `cd cats-adoption` et `yarn install` (ou `npm install`)
 
-### Launch
+### Lancement
 
-The project has been bootstrapped with **Create React App**.
+Le projet a été créé à l'aide de **Create React App**.
 
-- Start project : `yarn start` (or `npm start`)
+- Lancer le projet : `yarn start` (ou `npm start`)
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-The page will reload if you make edits.
+L'application est lancée en mode développement.<br>
+Ouvrir [http://localhost:3000](http://localhost:3000) pour visualiser l'application dans le navigateur.
+La page se recharge à chaque modification.
 
-### Run unit tests
+### Lancer les tests unitaires
 
-- `yarn test` (or `npm test`)
+- `yarn test` (ou `npm test`)
 
-Launches the test runner in the interactive watch mode.
+Lance le gestionnaire de tests en mode interactif.
 
-## Start
+## Commencer l'exercice
 
-**Now that you are ready, let's explore exercise's specifications [here](./SPECIFICATIONS.md).**
+**Maintenant que vous êtes prêt(e), vous pouvez consulter les consignes de l'exercice [ici](./SPECIFICATIONS.md).**

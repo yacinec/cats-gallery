@@ -1,4 +1,4 @@
-image: docker.matters.tech/docker/base-images/ci/node10:latest
+image: node:10-alpine
 
 stages:
   - unit
