@@ -9,3 +9,7 @@
 .list {
   list-style-type: none;
 }
+
+.listItem {
+  display: inline-block;
+}
