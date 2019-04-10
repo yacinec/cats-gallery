@@ -1,34 +1,34 @@
-# Specifications
+# Spécifications <a href="./SPECIFICATIONS.en.md">Version anglaise</a>
 
 ## Introduction
 
-You have been proposed this little assignment in order to check how you can address and tackle tasks that have been asked to you. Consider there is no exact answer to the problem nor only one way of doing. The goal of this exercise is to map your strengths and weaknesses. It will allow us to use your code as a discussion support during your technical interview.
+Nous vous proposons ce petit exercice dans le but de découvrir comment vous abordez un problème donné. Il n'existe pas de réponse exacte ou de manière unique de traiter le problème proposé. Le but de ce test est de cartographier vos forces et faiblesses. Nous pourrons par la suite se servir de votre code comme support de discussion lors de votre entretien technique.
 
-## Scenario
+## Scénario
 
-A client would like to create a **web desktop interface** for a feline association. This interface should show cats that needs to be adopted and allows any visitor to make an appointment to adopt a cat.
+Un client aimerait créer une **interface web "desktop"** d'une association féline. Cette interface doit montrer des chats qui ont besoin d'être adoptés et doit laisser la possibilité au visiteur de planifier un rendez-vous pour une future adoption.
 
-## Deliverables
+## Livrables
 
-- A gallery showing pictures of cats with names.
+- Une galerie d'images de chats avec leur nom associé.
 
-![Step 1](./step1.png "Cats gallery")
+![Step 1](./step1.png "Galerie de chats")
 
-- When clicking on a cat we can access to details and we should see a button "Make an appointment to adopt"
+- Au clic sur un chat nous pouvons accéder à ses informations ainsi qu'à un bouton permettant de "Planifier un rendez-vous"
 
-![Step 2](./step2.png "Cat details")
+![Step 2](./step2.png "Détails du chat")
 
-- When clicking on "Make an appointment to adopt", information of an appointment (date/time) should be displayed to the user.
+- Au clic sur "Planifier un rendez-vous", la date et horaire du rendez-vous doivent être affichés à l'utilisateur.
 
 ![Step 3](./step3.png "Appointment confirmation")
 
-**Images shown provide an example. Use your own way of doing if you want.**
+**Les images proposées sont données comme exemple. Vous pouvez adapter l'agencement des pages selon vos envies.**
 
-## Requirements
+## Exigences
 
-You must create components to structure your interface. In order to display cats information and retrieve appointment information you will need to consume two different API endpoints :
+Vous devez créer des composants pour structurer votre interface. Pour afficher les chats et générer la date de rendez-vous, vous allez devoir consommer deux endpoints d'API :
 
-### Cats list endpoint
+### Endpoint de listing de chats
 
 - **URL** : `https://europe-west1-teamstarter-projects.cloudfunctions.net/getCats`
 
@@ -45,7 +45,7 @@ You must create components to structure your interface. In order to display cats
   - **Code** : 405
   - **Content** : `{"error":"Method not allowed"}`
 
-### Appointment endpoint
+### Endpoint de rendez-vous
 
 - **URL** : `https://europe-west1-teamstarter-projects.cloudfunctions.net/getAdoptionAppointment`
 
@@ -74,16 +74,16 @@ You must create components to structure your interface. In order to display cats
   - **Code** : 400
   - **Content** : `{"error":"You must provide a valid catId (number)"}`
 
-## To go further
+## Pour aller plus loin
 
-If you want to go deeper and improve your cats interface here are some topics you might want to cover :
+Si vous voulez creuser et améliorer votre projet, voici quelques pistes d'améliorations possibles :
 
-- Make your grid fully responsive
-- Add different kind of tests (integration, ...)
-- Improve the provided CI by adding some useful jobs (linting, running extra tests, ...)
-- Handle errors
+- Faire en sorte que l'interface soit responsive sur les différents types d'écran
+- Rajouter des tests (d'intégration ou autre)
+- Améliorer la CI donnée comme exemple en ajoutant des nouvelles étapes (lint, lancement de tests, ...)
+- Intégrer une gestion d'erreurs
 - ...
 
-## Submit your work
+## Soumettre votre travail
 
-When you are done with the exercise, just submit a new Merge Request on gitlab.
+Quand vous pensez avoir fini l'exercice, merci de pousser sur Gitlab, dans votre espace personnel, le projet modifié par vos soins.
