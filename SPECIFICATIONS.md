@@ -1,4 +1,4 @@
-# Spécifications <a href="./SPECIFICATIONS.en.md">Version anglaise</a>
+# Spécifications <a href="./SPECIFICATIONS.en.md">English Version</a>
 
 ## Introduction
 
@@ -18,7 +18,7 @@ Un client aimerait créer une **interface web "desktop"** d'une association fél
 
 ![Step 2](./step2.png "Détails du chat")
 
-- Au clic sur "Planifier un rendez-vous", la date et horaire du rendez-vous doivent être affichés à l'utilisateur.
+- Au clic sur "Planifier un rendez-vous", l'utilisateur doit pouvoir voir la date et l'horaire de son rendez-vous.
 
 ![Step 3](./step3.png "Appointment confirmation")
 
@@ -79,9 +79,7 @@ Vous devez créer des composants pour structurer votre interface. Pour afficher 
 Si vous voulez creuser et améliorer votre projet, voici quelques pistes d'améliorations possibles :
 
 - Faire en sorte que l'interface soit responsive sur les différents types d'écran
-- Rajouter des tests (d'intégration ou autre)
-- Améliorer la CI donnée comme exemple en ajoutant des nouvelles étapes (lint, lancement de tests, ...)
-- Intégrer une gestion d'erreurs
+- Rajouter des tests d'intégration (ou autre)
 - ...
 
 ## Soumettre votre travail
