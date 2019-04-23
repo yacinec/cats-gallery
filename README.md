@@ -8,8 +8,7 @@ Vous devez avoir `nodejs` (https://nodejs.org/fr/download/) installé sur votre 
 
 ### Installation
 
-- Cloner le projet: `git clone https://gitlab.matters.tech/entretiens/cats-adoption.git`
-- Installer les dépendences : `cd cats-adoption` et `yarn install` (ou `npm install`)
+- Installer les dépendences : `npm install` (ou `yarn install`)
 
 ### Lancement
 
