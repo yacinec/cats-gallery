@@ -30,7 +30,7 @@ You must create components to structure your interface. In order to display cats
 
 ### Cats list endpoint
 
-- **URL** : `https://europe-west1-teamstarter-projects.cloudfunctions.net/getCats`
+- **URL** : `https://europe-west1-matters-test.cloudfunctions.net/getCats`
 
 - **Method** : `GET`
 
@@ -47,7 +47,7 @@ You must create components to structure your interface. In order to display cats
 
 ### Appointment endpoint
 
-- **URL** : `https://europe-west1-teamstarter-projects.cloudfunctions.net/getAdoptionAppointment`
+- **URL** : `https://europe-west1-matters-test.cloudfunctions.net/getAdoptionAppointment`
 
 - **Method** : `POST`
 
