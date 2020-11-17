@@ -9,5 +9,4 @@ test.unit:
     - yarn
   script:
     - yarn test
-  tags:
-    - k8s
+
