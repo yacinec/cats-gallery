@@ -86,4 +86,4 @@ If you want to go deeper and improve your cats interface here are some topics yo
 
 ## Submit your work
 
-When you are done with the exercise, please submit the edited project in your own namespace on Gitlab.
+When you are done with the exercise, please push your code to a feature-branch and open a pull request.
