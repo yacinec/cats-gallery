@@ -84,4 +84,4 @@ Si vous voulez creuser et améliorer votre projet, voici quelques pistes d'amél
 
 ## Soumettre votre travail
 
-Quand vous pensez avoir fini l'exercice, merci de pousser sur Gitlab, dans votre espace personnel, le projet modifié par vos soins.
+Quand vous pensez avoir fini l'exercice, veuillez pousser votre code sur une feature-branch et ouvrir une pull request ;)
