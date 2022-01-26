@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import "./CatsGallery.css";
 
 const catsMock = [
@@ -9,7 +9,7 @@ const catsMock = [
     breed: "Persian",
     location: "Paris refuge - 75",
     gender: "Male",
-    picturePath: "http://placekitten.com/200/300"
+    picturePath: "http://placekitten.com/200/300",
   },
   {
     id: "2",
@@ -18,7 +18,7 @@ const catsMock = [
     breed: "Russian blue",
     location: "Marseille refuge - 13",
     gender: "Male",
-    picturePath: "http://placekitten.com/400/300"
+    picturePath: "http://placekitten.com/400/300",
   },
   {
     id: "3",
@@ -27,7 +27,7 @@ const catsMock = [
     breed: "Persian",
     location: "Grenoble refuge - 38",
     gender: "Male",
-    picturePath: "http://placekitten.com/500/300"
+    picturePath: "http://placekitten.com/500/300",
   },
   {
     id: "4",
@@ -36,40 +36,29 @@ const catsMock = [
     breed: "Norwegian",
     location: "Bordeaux refuge - 33",
     gender: "Female",
-    picturePath: "http://placekitten.com/200/250"
-  }
+    picturePath: "http://placekitten.com/200/250",
+  },
 ];
 
-class CatsGallery extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { cats: [] };
-  }
+const CatsGallery = () => {
+  // /!\ Warning !
+  // Here is a data example with harcoded cats. You must fetch
+  // data from the endpoint provided in the README.md instead.
+  // Tip: you can use the fetch api (https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+  const [cats] = useState(catsMock);
 
-  componentDidMount() {
-    // /!\ Warning !
-    // Here is a data example with harcoded cats. You must fetch data from the endpoint provided in the README.md instead.
-    // Tip: you can use the fetch api (https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
-    this.setState({
-      cats: catsMock
-    });
-  }
-
-  render() {
-    const { cats } = this.state;
-    return (
-      <div className="gallery">
-        <h1 className="title">Cats gallery</h1>
-        <ul className="list">
-          {cats.map(cat => (
-            <li key={cat.id} className="listItem">
-              <img src={cat.picturePath} alt={cat.name} />
-            </li>
-          ))}
-        </ul>
-      </div>
-    );
-  }
-}
+  return (
+    <div className="gallery">
+      <h1 className="title">Cats gallery</h1>
+      <ul className="list">
+        {cats.map((cat) => (
+          <li key={cat.id} className="listItem">
+            <img src={cat.picturePath} alt={cat.name} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
 
 export default CatsGallery;
