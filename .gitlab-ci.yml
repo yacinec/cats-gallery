@@ -1,4 +1,4 @@
-image: node:10-alpine
+image: node:16-alpine
 
 stages:
   - unit
@@ -9,4 +9,3 @@ test.unit:
     - yarn
   script:
     - yarn test
-
