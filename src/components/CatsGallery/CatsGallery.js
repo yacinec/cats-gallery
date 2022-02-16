@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './CatsGallery.css';
 import CatCard from './CatCard/CatCard';
 import { useGlobalContext } from '../../context';
@@ -10,9 +10,16 @@ import { Link } from 'react-router-dom';
  */
 const CatsGallery = () => {
   // We use the context to get cats from the API.
-  const { cats } = useGlobalContext();
+  const context = useGlobalContext();
+  const [cats, setCats] = useState([]);
 
-  if (cats.length < 1) {
+  useEffect(() => {
+    if (context !== undefined) {
+      setCats(context.cats);
+    }
+  }, [context]);
+
+  if (cats === undefined || cats.length < 1) {
     return <div>There is no cat to display 😢</div>;
   }
 
