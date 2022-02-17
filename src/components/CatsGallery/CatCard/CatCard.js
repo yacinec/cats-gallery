@@ -1,5 +1,5 @@
 import React from 'react';
-import './CatCard.css';
+import './CatCard.scss';
 
 /**
  *

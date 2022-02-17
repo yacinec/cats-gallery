@@ -17,15 +17,14 @@
     rgba(249, 200, 230, 1) 0%,
     rgba(255, 250, 177, 1) 100%
   );
-}
+  .cat--img,
+  .cat--title {
+    opacity: 0;
+  }
 
-.cat:hover .cat--img,
-.cat:hover .cat--title {
-  opacity: 0;
-}
-
-.cat:hover .hidden-text {
-  opacity: 1;
+  .hidden-text {
+    opacity: 1;
+  }
 }
 
 .cat--title {

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useGlobalContext } from '../../context';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import './CatDetails.css';
+import './CatDetails.scss';
 
 export default function CatDetails() {
   const params = useParams();

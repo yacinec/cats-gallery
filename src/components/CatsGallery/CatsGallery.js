@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './CatsGallery.css';
+import './CatsGallery.scss';
 import CatCard from './CatCard/CatCard';
 import { useGlobalContext } from '../../context';
 import { Link } from 'react-router-dom';
