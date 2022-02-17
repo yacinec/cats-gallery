@@ -6,7 +6,9 @@ import './CatDetails.scss';
 
 export default function CatDetails() {
   const params = useParams();
-  const { cats } = useGlobalContext();
+  const context = useGlobalContext();
+  const [cats, setCats] = useState([]);
+
   const [cat, setCat] = useState(null);
   const [alertMessage, setAlertMessage] = useState('');
 
@@ -102,6 +104,12 @@ export default function CatDetails() {
   useEffect(() => {
     fetchCat(params.catId);
   }, [cats, params.catId]);
+
+  useEffect(() => {
+    if (context !== undefined) {
+      setCats(context.cats);
+    }
+  }, [context]);
 
   if (cat === null || cat === undefined) {
     return <div>This cat doesn't exist</div>;
