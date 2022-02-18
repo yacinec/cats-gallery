@@ -1,5 +1,10 @@
-import React from 'react';
+import * as React from 'react';
 import './CatCard.scss';
+
+type CatCardProps = {
+  name: string;
+  picturePath: string;
+};
 
 /**
  *
@@ -7,11 +12,11 @@ import './CatCard.scss';
  * @param {string} name,
  * @param {string} picturePath,
  */
-const CatCard = ({ name, picturePath }) => {
+const CatCard = ({ name, picturePath }: CatCardProps) => {
   return (
     <div className='cat'>
-      <img className='cat--img' src={picturePath} alt={name} />
-      <h2 className='cat--title'>{name}</h2>
+      <img className='img' src={picturePath} alt={name} />
+      <h2 className='title'>{name}</h2>
       <p className='btn hidden-text'>See more</p>
     </div>
   );

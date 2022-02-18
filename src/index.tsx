@@ -1,9 +1,9 @@
 import './index.scss';
-import React from 'react';
-import ReactDOM from 'react-dom';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 import CatsGallery from './components/CatsGallery/CatsGallery';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CatDetails from './components/CatDetails/CatDetails';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AppProvider } from './context';
 
 ReactDOM.render(
